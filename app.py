@@ -4,10 +4,13 @@ import torch
 import sys
 import os
 from tinysam import sam_model_registry, SamPredictor
+import wget
 
+URL = "https://github.com/xinghaochen/TinySAM/releases/download/1.0/tinysam.pth"
+response = wget.download(URL, "tinysam.pth")
 
 model_type = "vit_t"
-sam = sam_model_registry[model_type](checkpoint="./weights/tinysam.pth")
+sam = sam_model_registry[model_type](checkpoint="tinysam.pth")
 
 predictor = SamPredictor(sam)
 
