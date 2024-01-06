@@ -1,5 +1,5 @@
 torch
 torchvision
 matplotlib
-cv2
+opencv
 numpy
