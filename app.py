@@ -7,7 +7,7 @@ from tinysam import sam_model_registry, SamPredictor
 
 
 model_type = "vit_t"
-sam = sam_model_registry[model_type](checkpoint="./weight/tinysam.pth")
+sam = sam_model_registry[model_type](checkpoint="./weights/tinysam.pth")
 
 predictor = SamPredictor(sam)
 
