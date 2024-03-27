@@ -51,12 +51,12 @@ description_p = """# Interactive Instance Segmentation
 
 # examples
 examples = [
-    ["fig/1.jpg"],
-    ["fig/2.jpg"],
-    ["fig/3.jpg"],
-    ["fig/4.jpeg"],
-    ["fig/5.jpg"],
-    ["fig/6.jpeg"]
+    ["fig/assets_1.jpg"],
+    ["fig/assets_2.jpg"],
+    ["fig/assets_3.jpg"],
+    ["fig/assets_4.jpeg"],
+    ["fig/assets_5.jpg"],
+    ["fig/assets_6.jpeg"]
 ]
 
 default_example = examples[0]
