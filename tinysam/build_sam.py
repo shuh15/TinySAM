@@ -89,7 +89,7 @@ def build_sam_vit_t(checkpoint=None):
     if checkpoint is not None:
         with open(checkpoint, "rb") as f:
             device="cuda" if torch.cuda.is_available() else "cpu"
-            state_dict = torch.load(f)
+            state_dict = torch.load(f, map_location=device)
         mobile_sam.load_state_dict(state_dict)
     return mobile_sam
 
