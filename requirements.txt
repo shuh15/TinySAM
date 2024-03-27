@@ -5,4 +5,4 @@ opencv-python
 numpy
 timm
 wget
-gradio==4.11.0
+gradio==4.22.0
